@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link href="./index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="app-container">
+  
+  <div class="post_truck-container">
+    <h1>Create forks</h1>
+    <form action="/fork" method="post" id="load-form">
+      <label>Name of fork:
+        <input placeholder="fork name"
+               name="createForkName"
+               value=""
+               type="text">
+      </label>
+      <label for="message">Description fork:</label>
+      <textarea rows="4"
+                cols="45"
+                name="createForkMessage"
+                form="load-form"
+                id="message">
+      </textarea>
+      <h2>Category forks</h2>
+      <label for="type">Type:</label>
+      <select id="type" name="createForkType">
+        <option value="none">none</option>
+        <option value="short">short</option>
+        <option value="middle">middle</option>
+        <option value="long">long</option>
+        <option value="extra">extra</option>
+      </select>
+      <button type='submit'>Send</button>
+    </form>
+  </div>
+  
+  <div class="get_truck-container">
+    <h1>Get fork</h1>
+    <form action="/fork" method="get">
+      <label>Get fork by id:
+        <input placeholder="input id"
+               name="id"
+               value=""
+               type="text">
+      </label>
+      <label>Get fork by user id:
+        <input placeholder="Username"
+               name="creator"
+               value=""
+               type="text">
+      </label>
+      <h2>Category forks</h2>
+      <label for="getType">Type:</label>
+      <select id="getType" name="getForkType">
+        <option value="none">none</option>
+        <option value="short">short</option>
+        <option value="middle">middle</option>
+        <option value="long">long</option>
+        <option value="extra">extra</option>
+      </select>
+      <button type='submit' class="getBtn">Get</button>
+    </form>
+  </div>
+</div>
+<a href="/users">user go</a>
+</body>
+</html>

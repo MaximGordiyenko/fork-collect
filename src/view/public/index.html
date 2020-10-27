@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>login or Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+  <link href="./index.css" type="text/css" rel="stylesheet">
+  <link href="./normalize.css" rel="stylesheet">
+</head>
+<body>
+<div class="app-container">
+  
+  <div class="login-container">
+    <h1>Login Form</h1>
+    <form action="/login" method="POST">
+      <label>Email:
+        <input name="username"
+               placeholder="Username"
+               value="user@gmail.com"
+               required
+               type="text">
+      </label>
+      <label>Password:
+        <input name="pass"
+               placeholder="Password"
+               value="user"
+               required
+               type="password">
+      </label>
+      <input type="submit">
+    </form>
+  </div>
+  
+  <div class="registration-container">
+    <h1>Registration Form</h1>
+    <form action="/signup" method='post' id='register-form'>
+      <label>Username:
+        <input placeholder="Username"
+               name="username"
+               value="user"
+               required type="text">
+      </label>
+      <label>Email:
+        <input placeholder="Email"
+               name="email"
+               value="user@gmail.com"
+               required
+               type="email">
+      </label>
+      <label>Password:
+        <input placeholder="Password"
+               name="pass"
+               value="user"
+               required
+               type="password">
+      </label>
+      <label>Re-password:
+        <input placeholder="Re Password"
+               name="repass"
+               value="user"
+               required
+               type="password">
+      </label>
+      <button type='submit'>Register</button>
+      <label for='register-form' class="register-label">Already Member ? Sign In</label>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

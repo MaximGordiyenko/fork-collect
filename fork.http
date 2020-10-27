@@ -1,0 +1,6 @@
+GET http://localhost:5000/users?page=1&limit=5
+Accept: application/json
+
+###
+GET http://localhost:5000/posts?page=1&limit=4
+Accept: application/json

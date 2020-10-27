@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div>
+  {{#if fork._id}}
+    <h1>Name: {{fork.createForkName}}</h1>
+    <p>Message: {{fork.createForkMessage}}</p>
+    <p>Type: {{fork.createForkType}}</p>
+
+  {{else if fork.createForkType}}
+    <p>Type: {{fork.createForkType}}</p>
+
+  {{else if fork.userId}}
+    <p>Type: {{fork.userId}}</p>
+    sss
+{{else}}
+    {{#each fork}}
+      <h1>Name: {{createForkName}}</h1>
+      <p>Message: {{createForkMessage}}</p>
+      <p>Type: {{createForkType}}</p>
+    {{/each}}
+  {{/if}}
+</div>
+<a href="/forks">go back to create</a>
+</body>
+</html>

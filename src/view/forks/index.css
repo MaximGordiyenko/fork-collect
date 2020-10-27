@@ -1,0 +1,82 @@
+form {
+    margin: 0 auto;
+    width: 300px;
+}
+
+input {
+    margin-bottom: 3px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #CCC
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post_truck-container,
+.get_truck-container,
+.update_truck-container,
+.delete_truck-container {
+    width: 300px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.post_truck-container h1,
+.get_truck-container h1,
+.update_truck-container h1,
+.delete_truck-container h1 {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+}
+
+.post_truck-container input[type="text"],
+.get_truck-container input[type="text"],
+.update_truck-container input[type="text"],
+.delete_truck-container input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.post_truck-container button,
+.get_truck-container button,
+.update_truck-container button,
+.delete_truck-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #535b63;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+}
+
+.post_truck-container button:hover,
+.get_truck-container button:hover,
+.update_truck-container button:hover,
+.delete_truck-container button:hover {
+    background-color: #a7a7a7;
+    color: #535b63;
+}

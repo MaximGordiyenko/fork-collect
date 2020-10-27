@@ -1,0 +1,74 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+}
+
+input {
+    margin-bottom: 3px;
+    margin-right: 10px;
+    padding: 7px;
+    width: 100%;
+    border: 1px solid #CCC
+}
+
+button {
+    padding: 10px
+}
+
+label {
+    cursor: pointer;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.roles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.login-container,
+.registration-container {
+    width: 300px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.login-container h1,
+.registration-container h1 {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 24px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.registration-container input[type="text"],
+.registration-container input[type="email"],
+.registration-container input[type="password"] {
+    width: 100%;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.login-container input[type="submit"],
+.registration-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #535b63;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+}
